@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reproductor de Listas M3U</title>
+    <title>Reproductor de Listas M3U8</title>
+    <link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -25,12 +26,12 @@
 </head>
 <body>
     <div class="container">
-        <h1>Reproductor de Listas M3U</h1>
+        <h1>Reproductor de Listas M3U8</h1>
         <div>
             <label for="playlistSelect">Seleccionar Lista de Reproducción:</label>
             <select id="playlistSelect" onchange="loadPlaylist()">
-                <option value="playlist1.m3u">Lista 1</option>
-                <option value="playlist2.m3u">Lista 2</option>
+                <option value="playlist1.m3u8">Lista 1</option>
+                <option value="playlist2.m3u8">Lista 2</option>
                 <!-- Agregar más listas según sea necesario -->
             </select>
         </div>
@@ -38,15 +39,20 @@
             <!-- Aquí se cargarán las sublistas -->
         </div>
         <div class="playlist">
-            <audio id="audioPlayer" controls>
-                <source id="audioSource" src="" type="audio/mpeg">
-                Su navegador no soporta el elemento de audio.
-            </audio>
+            <video id="videoPlayer" class="video-js vjs-default-skin" controls preload="auto" width="640" height="264">
+                <source id="videoSource" src="" type="application/x-mpegURL">
+                Tu navegador no soporta el elemento de video.
+            </video>
         </div>
         <div id="playlistContent">
-            <!-- Aquí se cargarán las canciones de la lista -->
+            <!-- Aquí se cargarán los videos de la lista -->
         </div>
     </div>
+
+    <script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
 
     <script src="js/app.js"></script>
 </body>
