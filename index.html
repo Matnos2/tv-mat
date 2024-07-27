@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de Listas M3U</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        select, button {
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .playlist {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Reproductor de Listas M3U</h1>
+        <div>
+            <label for="playlistSelect">Seleccionar Lista de Reproducción:</label>
+            <select id="playlistSelect" onchange="loadPlaylist()">
+                <option value="playlist1.m3u">Lista 1</option>
+                <option value="playlist2.m3u">Lista 2</option>
+                <!-- Agregar más listas según sea necesario -->
+            </select>
+        </div>
+        <div id="sublistContainer">
+            <!-- Aquí se cargarán las sublistas -->
+        </div>
+        <div class="playlist">
+            <audio id="audioPlayer" controls>
+                <source id="audioSource" src="" type="audio/mpeg">
+                Su navegador no soporta el elemento de audio.
+            </audio>
+        </div>
+        <div id="playlistContent">
+            <!-- Aquí se cargarán las canciones de la lista -->
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
