@@ -1,6 +1,6 @@
 const playlists = {
-    'https://raw.githubusercontent.com/Matnos2/listas/main/Matnos_list.m3u': {
-        'Sublista 1': ['https://example.com/playlist1-sub1.m3u8', 'https://example.com/playlist1-sub2.m3u8'],
+    'playlist1.m3u8': {
+        'Sublista 1': ['https://raw.githubusercontent.com/Matnos2/listas/main/Matnos_list.m3u', 'https://example.com/playlist1-sub2.m3u8'],
         'Sublista 2': ['https://example.com/playlist1-sub3.m3u8', 'https://example.com/playlist1-sub4.m3u8']
     },
     'playlist2.m3u8': {
