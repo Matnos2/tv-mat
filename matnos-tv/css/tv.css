@@ -1,0 +1,77 @@
+/* tv.css */
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#header, #footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Centra el contenedor horizontalmente */
+    align-items: center;     /* Centra el contenedor verticalmente */
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.tv-container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    height: 80%;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#channel-list {
+    width: 30%;
+    background-color: #f4f4f4;
+    overflow-y: auto;
+    height: 100%;
+    padding: 10px;
+    border-right: 1px solid #ddd;
+}
+
+.channel-item {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+.channel-item img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.channel-item:hover {
+    background-color: #e0e0e0;
+}
+
+#player {
+    width: 70%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tv-player {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+}
+
